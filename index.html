@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>jsQR</title>
+    <style>
+    h1 {
+        margin-bottom: 50px;
+    }
+
+    div {
+        margin-top: 20px;
+    }
+
+    div.wrap {
+        text-align: left;
+        width: 500px;
+        margin: 0 auto;
+    }
+    </style>
+</head>
+
+<body style="text-align:center;">
+    <h1 style="margin: 10px;">二维码检测demo</h1>
+    <div>
+        <div class="wrap">
+            选择图片检测：
+            <input type="file" id="file">
+        </div>
+    </div>
+    <div>
+        <div class="wrap">
+            摄像头检测：
+            <button id="btn1">启用</button>
+            <button id="btn2">停用</button>
+        </div>
+    </div>
+    <div>
+        <div class="wrap">
+            链接跨域图片检测：
+            <input id="src" type="text" value="https://sightplus-cdn.sightp.com/SightPlus_1_5/image/2016/08/10/15/23/image587509.png">
+            <button id="btn3">检测</button>
+        </div>
+    </div>
+    <!-- <img src="" width="500px" height="300px" alt=""> -->
+    <div>
+        <h2></h2>
+        <video id="video" autoplay="true" style="display:none;"></video>
+        <canvas id="canvas" style="width:640px; height:480px;"></canvas>
+    </div>
+    <script src="./js/jquery-3.1.0.js"></script>
+    <script src="./js/jsQR.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
