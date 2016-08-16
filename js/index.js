@@ -91,6 +91,14 @@
     }
 
     function scanQR() {
+        width = 640;
+        height = 480;
+        $('#canvas').css({
+            width: width,
+            height: height
+        })
+        canvas.width = width;
+        canvas.height = height;
         if (navigator.getUserMedia) {
             navigator.getUserMedia({
                 video: true
